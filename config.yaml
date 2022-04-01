@@ -1,4 +1,16 @@
 baseURL: 'http://m0nt3cr1st0.github.io/'
-languageCode: 'en-us'
-title: 'Life at Oops!'
+#languageCode: 'en-us'
+title: 'Guerrilla DevOps'
 theme: 'ananke'
+sectionPagesMenu: "main"
+
+params:
+  ananke_socials:
+    - name: twitter
+      url: https://twitter.com/_m0nt3cr1st0_
+    - name: github
+      url: https://github.com/m0nt3cr1st0
+    - name: linkedin
+      url: https://www.linkedin.com/in/gonzalo-rubio-casas/
+  show_reading_time: true
+
