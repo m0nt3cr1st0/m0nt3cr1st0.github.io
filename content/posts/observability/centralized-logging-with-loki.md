@@ -26,3 +26,5 @@ The goal of this project is explore different logging solutions and different ce
   * Log granularity and retention period
 
 * For the typical trendy solutions, what's the quantitative solution between them?
+
+# Log shipping
