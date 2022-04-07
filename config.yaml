@@ -3,6 +3,7 @@ baseURL: 'http://m0nt3cr1st0.github.io/'
 title: 'Guerrilla DevOps'
 theme: 'ananke'
 sectionPagesMenu: "main"
+googleAnalytics: 'G-G6M61CW8RM'
 
 params:
   ananke_socials:
