@@ -1,7 +1,6 @@
 ---
 title: "Operation of Running Systems"
 date: 2022-04-06T20:00:30+02:00
-draft: true
 ---
 
 # Foreword

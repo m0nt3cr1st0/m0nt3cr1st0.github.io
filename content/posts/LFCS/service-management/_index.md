@@ -1,12 +1,11 @@
 ---
 title: "Service Management"
 date: 2022-04-08T09:00:00+00:00
-draft: true
 ---
 
-| Learning Goal                                                     | Command |
-|-------------------------------------------------------------------|---------|
-| Configure a caching DNS Server                                    |         |
+| Learning Goal                                                     | Command              |
+|-------------------------------------------------------------------|----------------------|
+| Configure a caching DNS Server                                    | `named` `dig`        |
 | Maintaining a DNS zone                                            |         |
 | Configure email aliases                                           |         |
 | Configure SSH servers and clients                                 |         |
