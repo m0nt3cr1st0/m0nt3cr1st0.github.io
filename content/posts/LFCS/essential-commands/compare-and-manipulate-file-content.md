@@ -4,6 +4,10 @@ date: 2022-04-07T09:43:30+02:00
 draft: true
 ---
 
-* Hackerrank challenges on:
-  * `sed`, `grep`
+
+
+# Exercises
+
+* Hackerrank challenges on `sed` and `grep`:
+  *    
 

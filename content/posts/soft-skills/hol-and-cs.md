@@ -6,13 +6,7 @@ draft: true
 
 # What is high order learning
 
-            /\ 
-        / CREATE \
-      // EVALUATE \\\
-     /// ANALYZE  \\\\
-   ////// APPLY  \\\\\\
-  ///// UNDERSTAND \\\\\
-//////// REMEMBER \\\\\\\\
+![Bloom's taxonomy](https://live.staticflickr.com/8231/29428436431_c12484fd8c_b.jpg)
 
 # Why makes it so amazing for CS
 
@@ -29,20 +23,4 @@ What happens with other theories then?
 * Mental palaces?
 * Active recalling 
 * Spaced repetition?
-
-# Examples for the LFCS
-
-There are 6 different domains
-
-* Essential commands
-* Operation of a running system
-* User Management
-* Networking
-* Service configuration
-* Storage
-
-Each domain has a set of different objectives...BUT the idea is to get the bigger picture of what an OS is, what value provides and how to handle it.
-
-Essential commands:
-
 
