@@ -14,24 +14,34 @@ Its history is full of bright engineers who came up with clever solutions that y
 
 # Learning objectives
 
-| Learning Goal      | Command     |
-| ------------------ | ----------- |
-| Boot, reboot, and shut down a system safely   |  |
-| Boot or change system into different operating modes |  |
-| Install, configure and troubleshoot bootloader | |
-| Diagnose and manage processes     | |
-| Locate and analyze system log files            |                                    |
-| Schedule tasks to run at a set date and time  |                              |
-| Verify completion of scheduled jobs    |           |
-| Update software to provide required functionality and security |       |
-| Verify the integrity and availability of resources    |  | 
-| Verify the integrity and availability of key processes               |  |
-| Change kernel runtime parameters, persistent and non-persistent      |  |
-| Use scripting to automate system maintenance tasks | |
-| Manage the startup process and services (In Services Configuration) | |
-| List and identify SELinux/AppArmor file and process contexts |  |
-| Manage Software | `dnf` `yum` `rpm` |
-| Identify the component of a Linux distribution that a file belongs to | `rpm` |
+|                  Learning Goal                       |               Command               |
+| ---------------------------------------------------- | ----------------------------------- |
+| Boot, reboot, and shut down a system safely          | `shutdown`                                                         |
+| Boot or change system into different operating modes | `systemctl isolate|set-default` `/usr/lib/systemd/system/*.target` |
+| Install, configure and troubleshoot bootloader       | `grub2-[install|mkconfig]` `/etc/grub` `grubby`                    |
+| Manage the startup process and services              | `systemctl` `/etc/systemd/system/` `UNIT-files format`             |
+| Diagnose and manage processes                        | `ps` `/proc` `kill` `p(grep|kill)` `[re]nice` `jobs` `fg`          |
+| Verify the integrity & availability of key processes | Same as above                                                      |
+| Locate and analyze system log files                  | `/var/log/` `/etc/rsyslog.conf` `/etc/logrotate.conf`              |
+| Schedule tasks to run at a set date and time         | `crond` `/etc/cron.d` `anacron` `at`                               |
+| Use scripting to automate system maintenance tasks   | BASH + `crond`                                                     |
+| Verify completion of scheduled jobs                  | `/var/log/cron`                                                    |
+| Verify the integrity & availability of resources     | `rpm -V`                                                           | 
+| Change kernel runtime parameters, (non-)persistent   | `/etc/sysctl.conf` `/etc/sysctl.d` `sysctl`                        |
+| Manage Software                                      | `dnf [info|list|install|repolist]` `/etc/yum.repos.d` `rpm`        |
+| Update software packages                             | `dnf check-updates` `dnf update`                                   |
+| Identify the package that a file belongs to          | `rpm -qf`                                                          |
+| Identify SELinux/AppArmor file and process contexts  |   |
+
+# Review questions
+
+1. Switch the current run-level to the multi-user level
+    1.1 make the previous change persistant
+    1.2 make this change persistant through the bootloader
+2. What's the difference between cron and anacron?
+    2.1 Make a file for each of them
+3. 
+
 # TODO
 
 * Make list prettier
