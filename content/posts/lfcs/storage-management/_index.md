@@ -37,6 +37,14 @@ Its history is full of bright engineers who came up with clever solutions that y
   1. Once the RAID is create save its config
   2. Destroy the created RAID
   3. Re-create it from the config of step 4.1
+  4. Add a new spare device to the RAID
+  5. Expand the RAID with the new device
+  6. Remove the device from the RAID
+1. Create two 200 MB partitions of type raid (fd) either on your hard disk using fdisk, or using LVM.
+2. Create a RAID 1 device named /dev/md0 using the two partitions.
+3. Format the RAID device as an ext4 filesystem. Then mount it at /myraid and make the mount persistent.
+4. Place the information about /dev/md0 in /etc/mdadm.conf , using mdadm
+5. Examine /proc/mdstat to see the status of your RAID device
 5. Setup an encrypted partition
   1. Create a FS in that partition
   2. COnfigure the encrypted partition to be mounted on boot
@@ -47,7 +55,9 @@ Its history is full of bright engineers who came up with clever solutions that y
   2. Remove the default entry
   3. Remove all the entries
   4. Get the ACL of the file
-
+8. Create LVM LV from a VG consisnting on two PVs.
+  1. Expand the LV by adding a new disk.
+  2. Reduce the LV by removing the previously added disk
 
 # TODO
 
