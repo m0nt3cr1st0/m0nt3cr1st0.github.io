@@ -1,0 +1,34 @@
+---
+title: "Services and Networking"
+date: 2022-05-03T19:04:00+02:00
+---
+
+# Foreword
+
+The aim of this guide is to provide the quickest path possible towards passing the CKA exam.
+The way you are evaluated in this exam is based on practical exercises, so that's where I put the
+focus on with these guides.
+
+If you are a newcomer to Containerization, I beg you to not stop here, Operation Systems is an amazing subject.
+Its history is full of bright engineers who came up with clever solutions that you use on your day to day life. Take a full dive on other articles about the concepts that k8s as a technology uses here.
+
+# Learning objectives
+
+|                     Learning Goal                             |                  Command           |
+| ------------------------------------------------------------  | ---------------------------------- |
+| Host networking configuration on the cluster nodes            |   |
+| Understand connectivity between Pods                          |   |
+| ClusterIP, NodePort, LoadBalancer service types and endpoints |   |
+| Know how to use Ingress controllers and Ingress resources     |   |   
+| Know how to configure and use CoreDNS                         |   |
+| Choose an appropiate container network interface plugin       |   |
+
+# Review Questions
+
+TO-DO
+
+# TODO
+
+* Make list prettier
+* Make each item of the list a link to a different post
+* Link to conceptual articles
