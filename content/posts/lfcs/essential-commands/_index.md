@@ -18,7 +18,7 @@ Its history is full of bright engineers who came up with clever solutions that y
 | ------------------ | ----------- |
 | Log into local & remote txt consoles   | `ssh-keygen` `ssh-copy-id` `screen` `script`   |
 | Search for files                       | `find`                                         |
-| Compare & manipulate file content      | `diff` `md5sum`  `sed`                         |
+| Compare & manipulate file content      | `diff` `md5sum`  `sed` `cut` `uniq` `sort`     |
 | Use input-output redirection           | `<` `<<CHAR` `>` `>>` `2>` `&>` `tee` `mkfifo` |   
 | Analyze text using basic RE            | `grep` `sed`                                   |
 | Archive, backup, compress & viceversa  | `tar` `cpio` `dd`                              |
@@ -35,7 +35,10 @@ Its history is full of bright engineers who came up with clever solutions that y
   2. Find the file looking it by its size
   3. Find the file looking it by its name
   4. Find the file by looking it by its permissions
-  5. Find the file by any of the criteria above and copy it into /mnt
+  5. Find the file by looking at its access time (less than 48h)
+  6. Find the file by looking at who does NOT owns a file
+  . Find the files that have a specific size or type
+  . Find the file by any of the criteria above and copy it into /mnt
 2. Find the difference between files
   1. Find the difference in case insensitive mode
 3. Create a regex to find all the lines of a log file that start with a timestamp like this YYYY-MM-DD
